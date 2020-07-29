@@ -1,5 +1,7 @@
 # autopilot-api-create
 
+![Screenshot](/images/ActionsJSON.png)
+
 Environment variables must be configured in your .env file.
 
 POSTITION_STACK_API_KEY= (optional)
