@@ -17,18 +17,28 @@ brew remove chefdk
 brew install curl autoconf automake libtool pkg-config
 
 git clone https://github.com/openvenues/libpostal
+
 cd libpostal
+
 ./bootstrap.sh
+
 ./configure --datadir=/tmp
+
 make -j4
+
 sudo make install
+
 
 ## Local Setup
 
 cd autopilot-address-validation
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install -r requirements.txt
+
 
 ## Ngrok Forwarding
 
