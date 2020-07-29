@@ -28,6 +28,11 @@ make -j4
 
 sudo make install
 
+## To Switch from LibPostal Python Binding to Postion Stack API
+
+You can either do validation based on address parsing rules in LibPostal, or you can point to an external API.
+
+To switch to the API set the optional environment variable, update the "address_memory" flask endpoint to use the "check_remote_api" method instead of the "get_address_set" method.
 
 ## Local Setup
 
@@ -39,11 +44,10 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+## Run 
+
+./start.sh
 
 ## Ngrok Forwarding
 
 ngrok http 5000
-
-## Run 
-
-./start.sh
